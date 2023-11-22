@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DNS Anticert</title>
+    <link rel="icon" href="../down/nro.png" type="image/png">
+    <link href="../down/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../down/all.min.css" />
+    <link rel="stylesheet" href="../down/dataTables.bootstrap5.min.css">
+    <script src="../down/jquery.min.js"></script>
+    <script src="../down/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        body {
+            background-color: rgb(11, 10, 10);
+            color: #fff;
+        }
+
+        .btn-primary {
+            border-color: #f44336 !important;
+            color: #fff !important;
+        }
+
+        .btn-primary,
+        .border-primary,
+        .bg-primary,
+        .btn-outline-primary:hover,
+        .btn-outline-primary {
+            background-color: #f44336 !important;
+        }
+
+        .feature-box {
+            padding: 38px 30px;
+            position: relative;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 0 29px 0 rgb(18 66 101 / 8%);
+            transition: all 0.3s ease-in-out;
+            border-radius: 8px;
+            z-index: 1;
+            width: 100%;
+        }
+
+        .feature-icon {
+            font-size: 1.8em;
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 1.2em;
+            font-weight: 500;
+            padding-bottom: 0.25rem;
+            text-decoration: none;
+            color: #212529;
+        }
+
+        .list-group-item.active {
+            background-color: #f44336;
+            border-color: #f44336;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            background-color: #f44336;
+        }
+
+        .nav-link {
+            color: #f44336;
+        }
+
+        .nav-link:focus,
+        .nav-link:hover {
+            color: #cd3a2f;
+        }
+
+        .copy-text {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container py-3">
+        <header>
+            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                    <img class="me-2" src="../img/logo.png" alt="" width="36" height="36">
+                </a>
+                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto" style="font-weight: 500">
+                </nav>
+                <nav class="my-2 my-md-0 ms-md-3">
+                    <a class="btn btn-outline-primary" href="https://t.me/dnscert" style="font-weight: 500">Tham Gia Nhóm Telegram</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+
+            <div class="row justify-content-center text-center">
+                <h2>Hướng Dẫn Dành Cho Hệ Điều Hành IOS</h2>
+            </div>
+
+            
+            <span style="font-size: 13pt; font-family: Arial; background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">I. Các Bước Cài Cẩu Hình DNS và Cài Game</span></br>
+            </br>
+            <h7><a id="user-content-bước-1-nhập-chứng-chỉ" class="anchor" aria-hidden="true" tabindex="-1" href="#bước-1-nhập-chứng-chỉ"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Bước 1: Cài DNS chặn thu hồi chứng chỉ lưu ý Muốn app sống vĩnh viễn thì cài DNS này và không tắt DNS và khởi động lại máy là app dùng vĩnh viễn nhé</h2>
+                <p><p dir="ltr" style="line-height: 1.2; margin-left: 18pt; margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 5pt;"><span style="font-size: 12pt; font-family: Arial; color: red; background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Tải Cấu Hình: </span>                    <span style="font-size: 12pt; font-family: Arial; color: black; background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> </span>
+                    <a class="btn btn-dark mb-3" style="border-radius: 10px;" href="https://is.gd/SrdcLP">Cấu Hình DNS ANTI VIP</a> </br>
+
+                    <p dir="ltr" style="line-height: 1.2; margin-left: 18pt; margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 5pt;">
+                        <span style="font-size: 12pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">( </span>
+                        <span style="font-size: 12pt; font-family: Arial; color: white; background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">HD Cài Cấu Hình: </span>
+                        <span style="font-size: 12pt; font-family: Arial; color: white; background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> Vào Cài Đặt Chung > Quản lí cấu hình & thiết bị > Cấu Hình Đã Tải Về > Cài Đặt > Nhập Mật Khẩu Thiết Bị > Bấm Cài đặt > Đóng </span>
+                        )
+                    </p>
+
+                    <img src="./img/dns (1).jpg" width="24%">
+                    <img src="./img/dns (2).jpg" width="24%">
+                    <img src="./img/dns (3).jpg" width="24%">
+                    <img src="./img/dns (4).jpg" width="24%">
+                    <img src="./img/dns (5).jpg" width="24%">
+                    <img src="./img/dns (6).jpg" width="24%">
+                    <img src="./img/dns (7).jpg" width="24%">
+                    <img src="./img/dns (8).jpg" width="24%">
+                    <img src="./img/dns (9).jpg" width="24%">
+                    <img src="./img/dns (10).jpg" width="24%"></p>
+                    <p dir="ltr" style="line-height: 1.2; margin-left: 18pt; margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 5pt;">
+                        <span style="font-size: 12pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">( </span>
+                        <span style="font-size: 12pt; font-family: Arial; color: white; background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Chú ý: </span>
+                        <span style="font-size: 12pt; font-family: Arial; color: white; background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> Truy cập thử <a style="color: #80eda3;" href="https://ocsp.apple.com/" class="text-a2" target="_blank">ocsp.apple.com</a> xem đã anti thành công chưa nếu thành công sẽ hiện không thể tải trang như hình phía dưới</span>
+                        )
+                    </p>
+                </p><img src="./img/checkthanhconganti.jpg" width="174" class="img-padding"></p>
+              
+                <p>Tiếp Theo cài ngay Esign trực tiếp Nhớ lưu ý vào setting của Esign xem esign bạn có chứng chỉ tên gì thì add vào đúng chứng chỉ của nó nha hình bên dưới<br>             
+                <a class="btn btn-dark mb-3" style="border-radius: 10px;" href="https://is.gd/mOv7JT">Esign trực tiếp Appcenter</a>
+                <img src="./img/tenchungchi.PNG" width="24%"></p> 
+
+                    <h2><a id="user-content-bước-1-nhập-chứng-chỉ" class="anchor" aria-hidden="true" tabindex="-1" href="#bước-1-nhập-chứng-chỉ"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Bước 2: Nhập chứng chỉ</h2>
+                    <p>Mở <code>ESign</code> -&gt; chọn tab <code>File</code> -&gt; Bấm <code>dấu 3 chấm</code> ở góc phải -&gt; chọn <code>Nhập</code> và chọn file <code>.zip</code> chứa chứng chỉ để thêm vào <code>ESign</code>.<br>
+                    <img src="./img/1 bamvao3cham.jpg" width="24%">
+                    <img src="./img/2 nhapfile.jpg" width="24%">
+                    <img src="./img/3 bamvaonodegiainen.jpg" width="24%"></p>
+                    <p>Bấm file <code>.zip</code> vừa thêm và chọn <code>Giải nén</code>, tiếp theo mở thư mục vừa giải nén đến khi thấy file <code>.p12</code> và <code>.mobileprovision</code>.<br>
+                    <img src="./img/4 giainenfile.jpg" width="24%">
+                    <img src="./img/5 daylathumucdagiainenxong.jpg" width="24%"></p>
+                    <p>Bấm file <code>.p12</code> và chọn <code>Nhập chứng chỉ</code>, sau đó điền mật khẩu (nếu có) và bấm <strong>OK</strong>.<br>
+                    <img src="./img/6 chonvaodayxempww.jpg" width="24%">
+                    <img src="./img/6 coppymatkhau.jpg" width="24%">
+                    <img src="./img/7 chonmoroinhapmkcoppy.jpg" width="24%">
+                    <img src="./img/nhapmatvaop12.jpg" width="24%">
+                    <img src="./img/8 nhapmobiversion.jpg" width="24%"></p>
+                    
+                    <h2><a id="user-content-bước-2-ký-app" class="anchor" aria-hidden="true" tabindex="-1" href="#bước-2-ký-app"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Bước 3: Ký app</h2>
+                    <p>Mở <code>ESign</code> -&gt; chọn tab <code>File</code> -&gt; Bấm <code>dấu 3 chấm</code> ở góc phải -&gt; chọn <code>Nhập</code> và chọn file <code>.ipa</code> cần ký để thêm vào <code>ESign</code>. Sau đó chọn <code>Nhập</code>.<br>
+                    <img src="./img/1 bamvao3cham.jpg" width="24%">
+                    <img src="./img/2 nhapfile.jpg" width="24%">
+                    <img src="./img/nhapgameipa.jpg" width="24%">
+                    <img src="./img/chonvaoungdung.jpg" width="24%">
+                    <p>Chọn tab <code>Apps</code> -&gt; Bấm app cần ký -&gt; Chọn <code>Ký</code>.<br>
+                    <img src="./img/kiipa.jpg" width="24%">
+                    <img src="./img/getnamesign.jpg" width="24%">
+                    <img src="./img/caigame.jpg" width="24%"></p>  
+                    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                        <div class="text-center">
+                            Trò chơi không có bản quyền chính thức, hãy cân nhắc kỹ trước khi tham gia.<br> Chơi quá 180 phút một ngày sẽ ảnh hưởng đến sức khỏe.
+                        </div>
+                    </footer>
+                
+                
+
+
+        </main>
+        <script src="../down/jquery.form.min.js"></script>
+        <script src="../down/clipboard.min.js"></script>
+        <script src="../down/jquery.dataTables.min.js"></script>
+        <script src="../down/dataTables.bootstrap5.min.js"></script>
+        <script src="../down/app.js?_=1672995547"></script>
+    </div>
+</body>
+
+</html>
